@@ -1,0 +1,30 @@
+{{#each methods}}
+{{#if methods.length}}
+
+<div class="delivery-type__list accordion-item accordion-item-expanded">
+    <div class="delivery-type__item accordion-item-toggle">
+        <div class="icon-arrow-down-2"></div>
+        <b>{{name_ru}}</b>
+        <span>{{description_ru}}&nbsp;&nbsp;</span>
+    </div>
+    <div class="delivery-type__item--list accordion-item-content">
+        {{#each methods}}
+        <label class="check-box" id="delivery-shipping-item-{{../id}}-{{id}}"><input type="radio" name="1" data-id="{{../id}}" data-child-id="{{id}}" class="delivery-shipping-method"><i></i>{{name_ru}}<span>{{cost}} &#8381;</span></label>
+        {{/each}}
+    </div>
+</div>    
+
+{{else}}
+
+<label class="delivery-type__item check-box">
+    <input type="radio" name="1"  data-id="{{id}}" class="delivery-shipping-method" id="delivery-shipping-item-{{id}}">
+    <i></i>
+    <span class="delivery-type__item--cost">{{money cost}} &#8381;</span>
+    <b>{{name_ru}}</b>
+    
+    <span>{{description_ru}}&nbsp;&nbsp;</span>
+    
+</label>    
+
+{{/if}}
+{{/each}}

@@ -1,0 +1,47 @@
+﻿{{#presents}}
+<div class="object-detail-action clearfix" {{#if first}} data-first="true"{{/if}}{{#unless progress}}data-pid="{{id}}"{{/unless}}>
+     <img src="img/gift_def.png" data-pre-src="{{imgJs}}" alt="" height="198" width="300">
+
+    <!--    {{#js_compare "this.type === 'bonus'"}}
+        {{else}}-->
+    <a href="#" class="btn right {{#if progress}}progress alert-nopresent{{/if}}">
+        {{cost}}<i class="sprite-img icon-coins"></i>
+        {{#if progress}}
+        <span style="width:{{progress}}%"></span>
+        {{/if}}
+    </a>
+    <!--{{/js_compare}}-->
+
+    <!--    {{#js_compare "this.type === 'birthday'"}}
+        <div class="overflow">
+            <div>{{lang "presents-0-Podarok_na_Den_Rozhd"}}</div>
+            <span>{{lang "presents-1-Pozdravlyaem_vas_s_D"}}</span>
+        </div>
+    
+        {{else}}-->
+    <div class="overflow">
+
+        <div>{{name}}</div>
+        {{#if first}}
+        <span>{{lang "presents-2-Pervyy_podarok"}}</span>
+        {{else}}
+        <span>{{lang "presents-3-Postoyannyy_podarok"}}</span>
+        {{/if}}
+        <!--{{#js_compare "this.type === 'first'"}}-->
+
+        <!--{{/js_compare}}-->
+        <!--
+                        {{#js_compare "this.type === 'permanent'"}}
+                        <span>{{lang "presents-3-Postoyannyy_podarok"}}</span>
+                        {{/js_compare}}
+                
+                        {{#js_compare "this.type === 'bonus'"}}
+                        <span>{{description}}</span>
+                        <b>{{lang "presents-4-Vremya_provedeniya_a"}} \r\n                {{period}}</b>
+                        {{/js_compare}}-->
+    </div>
+    <!--{{/js_compare}}-->
+
+</div>
+{{/presents}}
+

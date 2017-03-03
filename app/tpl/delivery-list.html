@@ -1,0 +1,59 @@
+<div class="content-block"  id="delivery-list-cache">
+    ﻿{{#each categories}}
+    <section class="delivery-section" id="delivery-category-{{id}}">
+        <div class="delivery-section__title clearfix delivery-category-name" data-category-id="{{id}}">
+            <b>{{name_ru}}</b>
+            <i class="sprite-img icon-bottom"></i>
+        </div>
+        <div class="delivery-section__list">
+            {{#each products}}
+            <div class="delivery-section__list--item clearfix {{#if img}}delivery-section__list--item_img{{/if}}" id="delivery-product-{{id}}-0" data-copy-id="0">
+                {{#if img}}
+                <div class="delivery-section__list--img delivery-product-trigger" data-product-id="{{id}}" data-copy-id="0">
+                    <img src="img/gift_sq_def.png" data-pre-src="{{imgSmall}}" alt="" class="section__list--img-small delivery-load-image" >
+                    <img src="img/gift_sq_def.png" data-pre-src="{{imgBig}}" alt="" class="section__list--img-detail delivery-load-image" >
+                </div>                 
+                {{/if}}
+
+                <div class="delivery-section__list--check check-box-inline">
+                    <input type="checkbox" data-product-id="{{id}}" data-copy-id="0" class="delivery-product-checkbox" id="delivery-product-checkbox-{{id}}-0">
+                    <i></i>
+                </div>
+                <div class="delivery-section__list--content">
+                    <div class="delivery-section__list--price delivery-product-trigger" data-product-id="{{id}}" data-copy-id="0"><b>{{money cost}}</b> &#8381;</div>
+                    <div class="delivery-section__list--name delivery-product-trigger" data-product-id="{{id}}" data-copy-id="0">{{name_ru}}</div>
+                    <div class="delivery-section__list--description delivery-product-trigger" data-product-id="{{id}}" data-copy-id="0">{{substring description_ru}}</div>
+                    <div class="deliver-section__list--full-content">
+                        {{description_ru}}
+                        <div class="delivery-section__list--option clearfix delivery-section__list--option-quantity">
+                            <div class="delivery-section__list-option--label left"><span>{{lang "delivery-list-quantity"}}</span></div>
+                            <div class="delivery-section__list-option--value right delivery-section__list-option--quantity">
+                                <i data-product-id="{{id}}" data-copy-id="0" class="delivery-product-dec">-</i>
+                                <input type="number" value="1" min="1" step="1" data-product-id="{{id}}" data-copy-id="0" class="delivery-product-amount" id="delivery-product-amount-{{id}}-0">
+                                <i data-product-id="{{id}}" data-copy-id="0" class="delivery-product-inc">+</i>
+                            </div>
+                        </div>
+                        {{#if variants.length}}
+                        <div class="delivery-section__list--option clearfix  delivery-section__list--option-additional">
+                            <div class="delivery-section__list-option--label left"><span>{{lang "delivery-list-Additional-options"}}</span></div>
+                            <div class="delivery-section__list-option--value right delivery-section__list-option--link"><a href="#" class="delivery-product-variants-select" data-product-id="{{id}}" data-copy-id="0" id="delivery-product-variant-select-{{id}}-0">Выбрать</a></div>
+                        </div>
+                        {{/if}}
+
+                        {{#if variants.length}}
+                        <div class="delivery-section__list-option--add"><a href="#" class="delivery-product-variants-add-copy" data-product-id="{{id}}" data-copy-id="0" >{{lang "delivery-list-addcopy"}}</span></a></div>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+
+            {{/each}}
+
+        </div>
+        <!--/Section-->
+    </section>
+    {{/each}}
+    <br>
+    <br>
+    <!--/if delivery__toolbar--order is visible-->
+</div>

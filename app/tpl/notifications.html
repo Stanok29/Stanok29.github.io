@@ -1,0 +1,28 @@
+﻿{{#each notifications}}
+<a href="#" class="notification-item clearfix" >
+    <span class="notification-item-name">{{companyName}}</span>
+    <span class="notification-item-text">{{message}}</span>
+
+    {{#if coins}}
+    <span class="notification-item-points">{{#if remove}}-{{else}}+{{/if}}{{coins}}<i class="points-icon sprite-img">C</i></span>
+    {{/if}}
+
+    {{#if present}}
+    <span class="notification-item-detail clearfix">
+        <span class="n-i-d-img left"><img src="{{present.img}}" alt="" style="width:42px; height:42px;"></span>
+        <span class="overflow">
+            <span class="n-i-d-name">
+                {{#if present.first}}
+                {{lang "notifications-0"}}
+                {{else}}
+                {{lang "notifications-1"}}
+                {{/if}}
+            </span>{{present.name}}
+        </span>
+    </span>
+    {{/if}}
+
+    <span class="notification-item-date">{{date date format="chat"}}</span>
+</a>
+
+{{/each}}

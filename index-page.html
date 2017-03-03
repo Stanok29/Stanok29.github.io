@@ -1,0 +1,158 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="center menu-icons tabbar " id="index-page-menu">
+            <a href="#tab1" class="tab-link active touch-fix"><i class="home-icon sprite-img-custom">1</i></a>
+            <a href="#tab2" id="index-page-menu-tab2" class="tab-link touch-fix"><i class="message-icon sprite-img">{{lang "index-tab2-icon"}}<span class="badge bg-red" id="index-navbar-chat" style="display: none;"></span></i></a>            
+            <a href="#tab3" class="tab-link touch-fix"><i class="message-icon sprite-img">3<span class="badge bg-red" id="index-navbar-chat" style="display: none;"></span></i></a>
+            <a href="#tab4" class="tab-link touch-fix"><i class="alert-icon sprite-img">4<span class="badge bg-red" id="index-navbar-notify" style="display: none;"></span></i></a>
+            <a href="#tab5" class="tab-link touch-fix"><i class="settings-icon sprite-img">5</i></a>
+        </div>
+    </div>
+</div>
+<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+<div class="pages navbar-through">
+    <!-- Page, data-page contains page name-->
+    <div data-page="index-page" class="page">
+        <!-- Scrollable page content-->
+        <div class="qr-fixed touch-fix" id="index-qr-button"><a href="qr.html" class="touch-fix"><i class="qr-icon sprite-img">q</i></a></div>
+
+
+        <div class="delivery__toolbar--order fix-bottom none" id="delivery-basket">
+            <a href="#" class="clearfix bg-red">
+                <span class="left">{{lang "index-page-Checkout"}}</span>                    
+                <span class="right"><span id="delivery-basket-number"></span>  ·  <b><span id="delivery-basket-sum"></span></b> &#8381;</span>
+            </a>
+        </div>    
+
+        <div class="toolbar messagebar none" id="idnex-chat-messagebar">
+            <div class="toolbar-inner">
+                <textarea class="" placeholder="{{lang "chat-1-Napishite_soobshchen"}}" id="chat-message"></textarea><a href="#" class="link btn touch-fix" id="chat-message-send"><i class=" icon-next sprite-img"></i></a>
+            </div>
+        </div>        
+
+        <div class="page-content tabs infinite-scroll index-page-content" id="index-page">
+            <div class="tab active" id="tab1">
+
+                <div class="object-detail">
+                    <a href="#" class="object-detail-img alert-text" id="company-detail" style="display:none">
+                        <span class="object-favorite" id="company-detail-heart"><i class="icon-heart sprite-img"></i></span>
+                        <span class="object-detail-info clearfix">
+                            <span class="text-left" id="company-detail-distance"></span>
+                            <span class="object-item-present text-center"><label id="company-detail-presents"></label><i class="present-icon sprite-img">w</i></span>
+                            <span class="object-item-points text-right"><label id="company-detail-coins"></label><i class="points-icon sprite-img">C</i></span>
+                        </span>
+                        <img src="img/gift_def.png" alt="" width="320" id="company-detail-image">
+                    </a>
+
+                    <div id="company-detail-action" class="object-detail-action-buttons clearfix">
+                        <a href="#" class="btn right" id="company-detail-call">
+                            <i class="icon-call sprite-img"></i>
+                        </a>                         
+                        <a href="#" class="btn right" id="company-detail-book">
+                            <i class="icon-cal sprite-img"></i>
+                        </a>
+
+                        <a href="#" class="btn" id="company-detail-vk">
+                            <i class="icon-vk sprite-img"></i>
+                        </a>
+                        <a href="#" class="btn" id="company-detail-insta">
+                            <i class="icon-insta sprite-img"></i>
+                        </a>
+                        <a href="#" class="btn" id="company-detail-fb">
+                            <i class="icon-fb2 sprite-img"></i>
+                        </a>                        
+                        <a href="#" class="btn" id="company-detail-www">
+                            <i class="icon-www sprite-img"></i>
+                        </a>  
+                    </div>
+                    <div class="accordion-list custom-accordion accordion-item">
+                        <a href="#" class="object-detail-location flex-container accordion-item-toggle touch-fix">
+                            <i class="sprite-img icon-loc"></i>
+                            <span id="company-detail-address"></span>
+                            <i class="sprite-img icon-bottom"></i>
+                        </a>
+                        <div class="accordion-item-content">
+                            <div class="text-block bg-white" id="company-detail-map">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <section class="" id="company-presents-list">
+
+                    </section>
+
+                    <div class="infinite-scroll-preloader">
+                        <div class="preloader"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab" id="tab2">
+                <div class="lost" id="index-delivery-mock" style="display:none">
+                    <div class="lost-icon">
+
+                    </div>
+                    <div class="lost-text"><div></div>{{lang "index-page-blocktext"}}</div>
+                </div>
+                <span id="tab2-content">
+
+                </span>
+            </div>
+
+            <div class="tab" id="tab3">
+
+                <div class="lost" id="index-messages-mock" style="display:none">
+                    <div class="lost-icon">
+                        <i class="message-icon sprite-img">-</i>
+                    </div>
+                    <div class="lost-text"><div>{{lang "index-page-16"}}</div>{{lang "index-page-17"}}</div>
+                </div>
+
+                <div class="page-content messages-content pull-to-refresh-content" data-ptr-distance="70">
+                    <div class="pull-to-refresh-layer">
+                        <div class="preloader"></div>
+                        <div class="pull-to-refresh-arrow" style="display:none"></div>
+                    </div>
+
+                    <div id="chat-messages-list"></div>
+                </div>
+
+
+            </div>
+
+            <div class="tab" id="tab4">
+                <div class="lost" id="index-notifications-mock" style="display:none">
+                    <div class="lost-icon">
+                        <i class="notification-icon sprite-img">4</i>
+                    </div>
+                    <div class="lost-text"><div>{{lang "index-page-18"}}</div>{{lang "index-page-19"}}</div>
+                </div>
+                <div class=" notifications-content">
+                    <div class="notifications-list" id="index-notifications-list"></div>
+                </div>
+            </div>
+
+            <div class="tab" id="tab5">
+                <div class="settings">
+                    <a href="profile.html" class="settings-profile touch-fix">
+                        <span><img data-pre-src="img/user_def.png" id="index-settings-avatar" alt=""></span>
+                        <!--<i class="loya-icon sprite-img">{{lang "index-page-7-B"}}</i>--><!--NOT AUTH-->
+                    </a>
+                    <div class="setting-links">
+                        <a href="profile.html" class="touch-fix"><i class="loya-icon sprite-img">s</i>{{lang "profile-0-Profil"}}</a>
+                        <a href="page-settings.html" class="touch-fix"><i class="loya-icon sprite-img">s</i>{{lang "index-page-8-i_classloyaicon_spri"}}</a>
+                        <a href="#" class="touch-fix alert-email"><i class="loya-icon sprite-img ">m</i>{{lang "index-page-10-i_classloyaicon_spri"}}</a>
+                        <a href="#" id="index-settings-logout" class="fix-bottom touch-fix"><i class="loya-icon sprite-img">W</i><label>{{lang "index-page-12-i_classloyaicon_spri"}}</label></a>
+                    </div>
+                </div>
+            </div>
+            <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+            </div>
+            <!--/Page content-->
+
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,12 @@
+<div class="text-center product-extra__title delivery-variant-title"><b>Выберите до {{length}} опций</b><br>Итого <b>+ <span id='delivery-variant-total-sum'>0</span></b> &#8381;</div>
+
+<div class="product-extra__list">
+    {{#each variants}}
+    <label class="product-extra__item check-box">
+        <input type="checkbox" class='delivery-variant-checkbox' data-variant-id='{{id}}' {{#if checked}}checked="checked"{{/if}}>
+        <i></i>
+        {{name_ru}}
+        <span class="delivery-variant-item-cost"><b>+ {{round cost}}</b> &#8381;</span>
+    </label>
+    {{/each}}
+</div>

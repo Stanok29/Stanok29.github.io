@@ -1,0 +1,19 @@
+﻿{{#each companies}}
+<div class="favorite-item clearfix" data-company="{{id}}">
+    <a href="#">
+        <i class="icon-heart-filled sprite-img"></i>
+        <img src="" data-pre-src="{{imgLogo}}"   alt="">
+    </a>							
+    <div class="object-item-points right"><label class="coins-label">{{coins}}</label><i class="points-icon sprite-img">C</i></div>
+    <div class="overflow">
+        <div>{{name}}</div>
+        <span><i class="distance-icon sprite-img">x</i><i class="list-point"></i>
+            {{#js_compare "this.place.distance <= 1000"}}{{place.distance}} {{lang "favs-1-i_classdistanceicon_"}}{{/js_compare}}
+            {{#js_compare "this.place.distance > 1000"}}{{round place.distance/1000 count="1"}} {{lang "favs-2"}}{{/js_compare}}
+        
+        </span>
+    </div>
+</div>
+
+{{/each}}
+

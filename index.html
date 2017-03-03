@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="Content-Security-Policy"
+              content="default-src *;
+              img-src filesystem: data: http: https: file:;
+              script-src 'self' 'unsafe-inline' 'unsafe-eval'
+              127.0.0.1:*
+              http://*.google.com
+              http://*.gstatic.com
+              http://*.googleapis.com
+              http://*.firebaseio.com
+              https://*.google.com
+              https://*.gstatic.com
+              https://*.googleapis.com
+              https://*.firebaseio.com
+              ;
+              style-src  'self' 'unsafe-inline'
+              127.0.0.1
+              http://*.google.com
+              http://*.gstatic.com
+              http://*.googleapis.com
+              http://*.firebaseio.com
+              https://*.google.com
+              https://*.gstatic.com
+              https://*.googleapis.com
+              https://*.firebaseio.com
+              ">
+        <title>Loya Mobile</title>
+        <!-- Path to Framework7 Library CSS-->
+        <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/welcomescreen.css">
+        <link rel="stylesheet" href="css/framework7.min.css">
+        <!-- Path to your custom app styles-->
+        <link rel="stylesheet" href="css/my-app.css">
+        <link rel="stylesheet" href="custom/custom.css">
+    </head>
+    <body>
+        <!-- Status bar overlay for fullscreen mode-->
+        <div class="statusbar-overlay"></div>
+        <!-- Panels overlay-->
+        <div class="panel-overlay"></div>
+        <!-- Views-->
+        <div class="views">
+            <!-- Your main view, should have "view-main" class-->
+            <div class="view view-main">
+                <!-- Top Navbar-->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                    </div>
+                </div>
+                <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+                <div class="pages navbar-through">
+                    <!-- Page, data-page contains page name-->
+                    <div data-page="index" class="page">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="cordova.js"></script>
+        <!--<script src="intelxdk.js"></script>-->
+        <!-- Path to Framework7 Library JS-->
+        <script type="text/javascript" src="app/lib/f7/framework7.js"></script>
+        <script src="custom/info.js"></script>
+        <script src="custom/ru.js"></script>
+        <script src="custom/en.js"></script>
+        <script src="custom/et.js"></script>
+        <script data-main="app/require-config" src="app/lib/requirejs/require.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9gkzKukHZiy02XUOvHy5dUhZtDREsJkU"></script>
+        <!-- Path to your app js-->
+    </body>
+</html>

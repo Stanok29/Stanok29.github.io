@@ -1,0 +1,17 @@
+﻿{{#each companies}}
+<div class="object-item" data-company="{{id}}">
+    <a href="#"   data-joined="{{joined}}"
+       class="object-favorite selected companies-company-heart"><i class="icon-heart{{#if joined}}-filled{{/if}} sprite-img"></i></a>
+    <a href="index-page.html" class="item-link">
+        <span class="object-item-name"><span>{{name}}</span>
+            {{#js_compare "this.place.distance <= 1000"}}{{place.distance}} {{lang "companies-0-namespandistance_m"}}{{/js_compare}}
+            {{#js_compare "this.place.distance > 1000"}}{{round place.distance/1000 count="1"}} {{lang "companies-1-namespandistance_km"}}{{/js_compare}}</span>
+
+        <span class="object-item-info">
+            <span class="object-item-present"><label class="allowed-label">{{allowedPresentsCount}}</label><i class="present-icon sprite-img">w</i></span>
+            <span class="object-item-points"><label class="coins-label">{{coins}}</label><i class="points-icon sprite-img">C</i></span>
+        </span>
+        <img src="" data-pre-src="{{imgMainScreen}}" alt="" class="company-main-image" height="180">
+    </a>
+</div>
+{{/each}}

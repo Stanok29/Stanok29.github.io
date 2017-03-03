@@ -1,0 +1,27 @@
+﻿<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link touch-fix"><i class="icon-back sprite-img"></i><span id="chat-header-title">{{lang "chat-0-perepiska_s"}}<label id="chat-header-company"></label></span></a></div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="chat" class="page toolbar-fixed">
+        <!-- Scrollable page content-->
+
+        <div class="page-content messages-content pull-to-refresh-content" data-ptr-distance="70">
+            <div class="pull-to-refresh-layer">
+                <div class="preloader"></div>
+                <div class="pull-to-refresh-arrow"></div>
+            </div>
+
+            <div id="chat-messages-list"></div>
+        </div>
+        <div class="toolbar messagebar">
+            <div class="toolbar-inner">
+                <textarea class="" placeholder="{{lang "chat-1-Napishite_soobshchen"}}" id="chat-message"></textarea><a href="#" class="link btn touch-fix" id="chat-message-send"><i class=" icon-next sprite-img"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

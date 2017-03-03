@@ -1,0 +1,15 @@
+﻿{{#each items}}
+<a href="chat.html?cid={{companyId}}" class="clearfix new">
+    <span class="left"><img data-pre-src='{{imgLogo}}' alt=""></span>
+    <span class="overflow">
+        <span class="clearfix">
+            <span class="right">{{date date}}</span>
+            <span class="overflow">{{name}}</span>
+        </span>
+        {{lang "messages-0"}}{{#if client}}{{lang "messages-1"}}{{else}}{{name}}{{/if}}{{lang "messages-2"}} {{message}}{{lang "messages-3"}}
+    </span>
+</a>
+
+
+{{/each}}
+

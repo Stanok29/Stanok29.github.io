@@ -1,0 +1,58 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="customback link touch-fix" id='delivery-checkout-back'>
+                <i class="icon-back sprite-img"></i>
+                <span class="navbar-title text-center">{{lang "delivery- checkout-comment"}}</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="delivery-checkout" class="page ">
+        <div class="delivery__toolbar--order fix-bottom">
+            <a href="#" class="text-center bg-green clearfix" id="delivery-checkout-next">
+                <span class="left">{{lang "delivery- checkout-Go"}}</span>
+                <span class="right">{{lang "delivery- checkout-Topay"}}  ·  <b class="delivery-checkout-total2"></b> &#8381;</span>
+            </a>
+        </div>
+        <div class=" page-content">
+            <div class="content-block">
+                <div class="checkout-type-items">
+                    <div class="field-label">{{lang "delivery- checkout-Selected-items"}}</div>
+                    <div class="checkout-product__list" id="delivery-checkout-list">
+
+                    </div>
+                    <a href="#" class="checkout-type__edit" id='delivery-checkout-back-products'>{{lang "delivery- checkout-change"}}</a>
+                </div>
+                <div class="checkout-product__total text-right"><span>{{lang "delivery- checkout-total"}}</span><b class="delivery-checkout-total"></b> &#8381;</div>
+                <div class="field-label clearfix">
+                    <div class="left">{{lang "delivery- checkout-Method-time-delivery"}}</div>
+                    <div class="right delivery-checkout-delivery-methods-cost"><b id="delivery-checkout-shipping-cost"></b> &#8381;</div>
+                </div>
+                <div class="checkout-type">
+                    <div><b id="delivery-checkout-shipping-name"></b></div>
+                    <br>
+                    <div id="delivery-checkout-shipping-info"></div>
+                    <a href="#" class="checkout-type__edit" id='delivery-checkout-back-shipping'>{{lang "delivery- checkout-change"}}</a>
+                </div>
+
+                <div class="field-label">{{lang "delivery- checkout-Contact-details"}}</div>
+                <div class="checkout-type">
+                    <div id="delivery-checkout-contacts"></div>
+                    <a href="#" class="checkout-type__edit"  id='delivery-checkout-back-info'>{{lang "delivery- checkout-change"}}</a>
+                </div>
+
+                <div class="field-label delivery-checkout-payment-title">{{lang "delivery- checkout-Payment-method"}}</div>
+                <div class="checkout-type  delivery-checkout-payment-block">
+                    <div><b id="delivery-checkout-payment-name"></b></div>
+                    <a href="#" class="checkout-type__edit"  id='delivery-checkout-back-payment'>{{lang "delivery- checkout-change"}}</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>    

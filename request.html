@@ -1,0 +1,87 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link touch-fix">
+                <i class="icon-back sprite-img"></i>
+                <span class="navbar-title text-center">{{lang "request-back"}}</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+
+    <!-- Page, data-page contains page name-->
+    <div data-page="request" class="page">
+        <div class="page-content">
+            <div class="delivery__toolbar--order fix-bottom">
+                <a href="#" class="text-center notactive bg-red" id="request-send">
+                   {{lang "request-Book-table"}}
+                </a>
+            </div>
+            <div class="content-block">
+
+                <div class="field-label">{{lang "request-Number-of-guests"}} </div>
+                <div class="input-field">
+                    <input type="number" placeholder="" value='1' id="request-info-guests">
+                </div>        
+                
+                <div class="field-label">{{lang "request-booking-Date"}}</div>
+                <div class="field-label--description" id='request-settings-info'></div>
+                <div class="input-field clearfix">
+                    <div class="date-input-vertical left clearfix">
+                        <div>
+                            <a href="#" id="request-date-day-inc">+</a>
+                            <i id="request-date-day">01</i>
+                            <a href="#" id="request-date-day-dec">-</a>
+                        </div>
+                        <span>/</span>
+                        <div>
+                            <a href="#" id="request-date-month-inc">+</a>
+                            <i id="request-date-month">10</i>
+                            <a href="#" id="request-date-month-dec">-</a>
+                        </div>
+                        <span>/</span>
+                        <div>
+                            <a href="#" id="request-date-year-inc">+</a>
+                            <i  id="request-date-year">2016</i>
+                            <a href="#" id="request-date-year-dec">-</a>
+                        </div>
+                    </div>
+                    <div class="date-input-vertical time-input-vertical left clearfix">
+                        <div>
+                            <a href="#" id="request-date-hour-inc">+</a>
+                            <i  id="request-date-hour">10</i>
+                            <a href="#" id="request-date-hour-dec">-</a>
+                        </div>
+                        <span>:</span>
+                        <div>
+                            <a href="#" id="request-date-min-inc">+</a>
+                            <i id="request-date-min">30</i>
+                            <a href="#" id="request-date-min-dec">-</a>
+                        </div>
+                    </div>
+                    
+                </div>                
+                
+                <div class="field-label">{{lang "request-Your-name"}}</div>
+                <div class="input-field">
+                    <input type="text" placeholder="Введите имя" id="request-info-name">
+                </div>
+                <div class="field-label">{{lang "request-Your phone-number"}}</div>
+                <div class="input-field">
+                    <input type="text" placeholder="Введите телефон"  id="request-info-phone">
+                </div>
+
+
+                <div class="field-label">{{lang "request-comment"}}</div>
+                <div class="input-field">
+                    <textarea placeholder="Стол у окна" rows="3"  id="request-info-comment"></textarea>
+                </div>                   
+                <div class="input-field clearfix">
+                    &nbsp;
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>    

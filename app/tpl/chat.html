@@ -1,0 +1,62 @@
+﻿<div class="messages">
+    <!-- Sent message (by default - green and on right side) -->
+
+    {{#each items}}
+    {{#if new}}
+    <div class="messages-new-line"><span><i class="icon-bottom sprite-img"></i>{{lang "chat-0-i_classiconbottom_sp"}}<i class="icon-bottom sprite-img"></i></span></div>
+    {{/if}}
+
+    {{#if my}}
+    <div class="message message-sent message-with-avatar">
+        <div class="message-avatar" style="background-image:url({{#if avatar}}{{avatar}}{{else}}'./img/user_def.png'{{/if}})"></div>
+        <!-- Bubble with text -->
+        <div class="message-text">
+            {{message}}
+            {{#if stars}}
+            <div class="message-rate">
+                {{#for stars start="1"}}
+                <a class="selected"><i class="icon-star-filled sprite-img"></i></a>
+                {{/for}}
+                {{#for stars end="5"}}
+                <a><i class="icon-star-1 sprite-img"></i></a>
+                {{/for}}
+            </div>
+            {{/if}}
+
+        </div>
+    </div>
+    {{/if}}
+
+    {{#unless my}}
+    <div class="message message-with-avatar message-received">
+        <!-- Sender avatar -->
+        <div style="background-image:url({{imgLogo}})" class="message-avatar"></div>
+        <!-- Bubble with text -->
+        <div class="message-text">
+            {{#if coins}}
+            {{lang "chat-1"}}
+            {{else}}
+            {{message}}
+            {{/if}}
+            {{#if present}}
+            <div class="present-item clearfix">
+                <a>
+                    <img src="{{present.pic}}" alt="" height="42" width="42" class="left">
+                    <span class="overflow">
+                        <b>{{present.name}}</b>
+                    </span>
+                </a>						
+            </div>
+            {{/if}}
+
+            {{#if coins}}
+            <div class="present-points clearfix">\r\n                +{{coins}}<i class="points-icon sprite-img">C</i>
+            </div>
+            {{/if}}
+        </div>
+    </div>    
+    {{/unless}}
+
+    <div class="messages-date"><span>{{date date format="chat"}}</span></div>
+    {{/each}}
+</div>

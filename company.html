@@ -1,0 +1,61 @@
+﻿
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" id='company-back' class="back-hint link touch-fix"><i class="icon-back sprite-img"></i><span id="company-header-name"></span></a></div>
+        <div class="right" style="display:none">
+            <div class="more-icons flex-container">
+                <a href="#" class="link icon-only fb-round touch-fix" id="company-header-fb" style='display:none'><i class="sprite-img icon-fb"></i></a>
+                <a href="#" id="company-links-chat" class="link icon-only touch-fix"><i class="sprite-img icon-message"><span class="badge bg-red" id="company-messages-count" style="display: none;"></span></i></a>
+                <!--<a href="#" class="link icon-only confirm-ok"><i class="sprite-img icon-trash"></i></a>-->
+            </div>
+            <a href="#"  class="link icon-only touch-fix" id="company-header-menu"><i class="sprite-img  icon-submenu"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="company" class="page">
+        <!-- Scrollable page content-->
+        <div class="qr-fixed touch-fix"><a href="qr.html" class="touch-fix"><i class="qr-icon sprite-img">q</i></a></div>
+
+        <div class="page-content">
+            <div class="object-detail">
+                <a href="#" class="object-detail-img alert-text" id="company-detail" style="display:none">
+                    <span class="object-favorite" id="company-detail-heart"><i class="icon-heart sprite-img"></i></span>
+                    <span class="object-detail-info clearfix">
+                        <span class="text-left" id="company-detail-distance"></span>
+                        <span class="object-item-present text-center"><label id="company-detail-presents"></label><i class="present-icon sprite-img">w</i></span>
+                        <span class="object-item-points text-right"><label id="company-detail-coins"></label><i class="points-icon sprite-img">C</i></span>
+                    </span>
+                    <img src="" alt="" width="320" id="company-detail-image">
+                </a>
+
+                <div class="object-detail-action clearfix">
+                    <a href="#" class="btn right alert-share">
+                        <i class="icon-share sprite-img"></i><label id="company-share-add" >test</label><i class="icon-coins sprite-img"></i>
+                    </a>
+
+                </div>
+
+                <div class="accordion-list custom-accordion accordion-item">
+                    <a href="#" class="object-detail-location flex-container accordion-item-toggle touch-fix">
+                        <i class="sprite-img icon-loc"></i>
+                        <span id="company-detail-address"></span>
+                        <i class="sprite-img icon-bottom"></i>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="text-block bg-white" id="company-detail-map">
+                        </div>
+                    </div>
+                </div>
+                <section class="" id="company-presents-list">
+
+                </section>
+
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

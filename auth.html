@@ -1,0 +1,59 @@
+﻿<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="welcome.html" class="back-hint link touch-fix"><i class="icon-back sprite-img"></i><span>{{lang "auth-0-Voyti_ili_sozdat_akk"}}</span></a>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="auth" class="page" data-context-name="test">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="content-block">
+                <h1>{{lang "auth-1-Vkhod"}}<a href="registration.html" class="right touch-fix">{{lang "auth-2-registratsiya"}}</a></h1>
+                <div class="list-block form-list">
+                    <ul>
+                        <li>
+                            <div class="item-content item-input-border">
+                                <div class="item-media"><i class="icon-mail sprite-img"></i></div>
+                                <div class="item-inner"> 
+                                    <div class="item-input">
+                                        <input type="email" class="" placeholder="{{lang "auth-3-Adres_elektronnoy_po"}}" id="auth-email" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content item-input-border">
+                                <div class="item-media"><i class="icon-lock sprite-img"></i></div>
+                                <div class="item-inner"> 
+                                    <div class="item-input">
+                                        <input type="password" class="" placeholder="{{lang "auth-4-Parol"}}" id="auth-password" value=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="form-list-or  registration-form-social-login">
+                            <div class="soc-sign flex-container">
+                                <a href="#" class="btn btn-fb touch-fix" id="auth-soc-fb"><i class="sprite-img icon-fb"></i></a>
+                                <a href="#" class="btn btn-gp touch-fix" id="auth-soc-gp"><i class="sprite-img icon-gp"></i></a>
+                            </div>
+                        </li>
+
+                        <li class="form-list-submit">
+                            <a href="#" class="btn block btn-bordered touch-fix" id="auth-login">{{lang "auth-5-Voyti"}}</a>
+                            <br>
+                            <div class="text-right"><a href="forget.html" class="touch-fix" id="auth-forget">{{lang "auth-6-Zabyli_parol"}}</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

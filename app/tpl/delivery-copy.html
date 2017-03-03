@@ -1,0 +1,33 @@
+<div class="delivery-section__list--item clearfix opened" id="delivery-product-{{product.id}}-{{copyId}}" data-copy-id="{{copyId}}">
+
+    <div class="delivery-section__list--check check-box-inline">
+        <input type="checkbox" data-product-id="{{product.id}}" class="delivery-product-checkbox" data-copy-id="{{copyId}}" id="delivery-product-checkbox-{{product.id}}-{{copyId}}" checked="checked">
+        <i></i>
+    </div>
+    <div class="delivery-section__list--content">
+        <div class="delivery-section__list--price delivery-product-trigger" data-product-id="{{product.id}}" data-copy-id="{{copyId}}"><b>{{money product.cost}}</b> &#8381;</div>
+        <div class="delivery-section__list--name delivery-product-trigger" data-product-id="{{product.id}}" data-copy-id="{{copyId}}">{{product.name_ru}}</div>
+        <div class="delivery-section__list--description delivery-product-trigger" data-product-id="{{product.id}}" data-copy-id="{{copyId}}">{{substring product.description_ru}}</div>
+        <div class="deliver-section__list--full-content">
+            {{product.description_ru}}
+            <div class="delivery-section__list--option clearfix">
+                <div class="delivery-section__list-option--label left"><span>Количество</span></div>
+                <div class="delivery-section__list-option--value right delivery-section__list-option--quantity">
+                    <i data-product-id="{{product.id}}" data-copy-id="{{copyId}}" class="delivery-product-dec">-</i>
+                    <input type="number" value="1" min="1" step="1" data-product-id="{{product.id}}" data-copy-id="{{copyId}}" class="delivery-product-amount" id="delivery-product-amount-{{product.id}}-{{copyId}}">
+                    <i data-product-id="{{product.id}}" data-copy-id="{{copyId}}" class="delivery-product-inc">+</i>
+                </div>
+            </div>
+            {{#if product.variants.length}}
+            <div class="delivery-section__list--option clearfix">
+                <div class="delivery-section__list-option--label left"><span>Дополнительные опции</span></div>
+                <div class="delivery-section__list-option--value right delivery-section__list-option--link"><a href="#" class="delivery-product-variants-select" data-product-id="{{product.id}}" data-copy-id="{{copyId}}" id="delivery-product-variant-select-{{product.id}}-{{copyId}}">Выбрать</a></div>
+            </div>
+            {{/if}}
+
+            {{#if product.variants.length}}
+            <div class="delivery-section__list-option--add"><a href="#" class="delivery-product-variants-add-copy" data-product-id="{{product.id}}"  data-copy-id="{{copyId}}">+ Добавить копию <span>(с другими опциями)</span></a></div>
+            {{/if}}
+        </div>
+    </div>
+</div>

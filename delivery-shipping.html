@@ -1,0 +1,83 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="customback link touch-fix" id='delivery-shipping-back'>
+                <i class="icon-back sprite-img"></i>
+                <span class="navbar-title text-center">{{lang "delivery- shipping-Catalog"}}</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+
+    <!-- Page, data-page contains page name-->
+    <div data-page="delivery-shipping" class="page">
+        <div class="delivery__toolbar--order fix-bottom">
+            <a href="#" class="text-center notactive bg-red" id="delivery-shipping-next">
+                {{lang "delivery- shipping-Select-payment-method"}} <i class="icon-arrow-right text-red"></i>
+            </a>
+        </div>        
+        <div class="page-content" id="delivery-shipping-cache">
+            <div class="content-block">
+
+                <div class="field-label delivery-shipping-method-title">{{lang "delivery- shipping-Select-modes-delivery"}}</div>
+                <div class="delivery-type" id="delivery-shipping-methods-list">
+
+                </div>
+                <div class="field-label">{{lang "delivery- shipping-your-name"}}</div>
+                <div class="input-field">
+                    <input type="text" placeholder="Введите имя" id="delivery-shipping-contact-name">
+                </div>
+                <div class="field-label">{{lang "delivery- shipping-Your-phone-number"}}</div>
+                <div class="input-field">
+                    <input type="text" placeholder="Введите телефон"  id="delivery-shipping-contact-phone">
+                </div>
+                <div class="field-label delivery-shipping-address-title">{{lang "delivery- shipping-Your-delivery-address"}} </div>
+                <div class="input-field  delivery-shipping-address-field">
+                    <textarea placeholder="{{lang "delivery-shipping-fill-adress"}}" rows="3"  id="delivery-shipping-contact-address"></textarea>
+                </div>
+                <div class="field-label">{{lang "delivery- shipping-Date-time-delivery"}}</div>
+                <div class="field-label--description" id='delivery-shipping-settings-info'></div>
+                <div class="input-field clearfix">
+                    <div class="date-input-vertical left clearfix">
+                        <div>
+                            <a href="#" id="delivery-shipping-methods-date-day-inc">+</a>
+                            <i id="delivery-shipping-methods-date-day">01</i>
+                            <a href="#" id="delivery-shipping-methods-date-day-dec">-</a>
+                        </div>
+                        <span>/</span>
+                        <div>
+                            <a href="#" id="delivery-shipping-methods-date-month-inc">+</a>
+                            <i id="delivery-shipping-methods-date-month">Окт</i>
+                            <a href="#" id="delivery-shipping-methods-date-month-dec">-</a>
+                        </div>
+                        <span>/</span>
+                        <div>
+                            <a href="#" id="delivery-shipping-methods-date-year-inc">+</a>
+                            <i  id="delivery-shipping-methods-date-year">2016</i>
+                            <a href="#" id="delivery-shipping-methods-date-year-dec">-</a>
+                        </div>
+                    </div>
+                    <div class="date-input-vertical time-input-vertical left clearfix">
+                        <div>
+                            <a href="#" id="delivery-shipping-methods-date-hour-inc">+</a>
+                            <i  id="delivery-shipping-methods-date-hour">10</i>
+                            <a href="#" id="delivery-shipping-methods-date-hour-dec">-</a>
+                        </div>
+                        <span>:</span>
+                        <div>
+                            <a href="#" id="delivery-shipping-methods-date-min-inc">+</a>
+                            <i id="delivery-shipping-methods-date-min">30</i>
+                            <a href="#" id="delivery-shipping-methods-date-min-dec">-</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="input-field clearfix">
+                    &nbsp;
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>    

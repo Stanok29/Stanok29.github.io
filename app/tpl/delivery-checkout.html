@@ -1,0 +1,12 @@
+{{#each items}}
+<div class="clearfix product__list--item">
+    <div class="product__list--item__check left check-box-inline"><i class="checked"></i></div>
+    <div class="product__list--item__name left">
+        <b>{{name_ru}}</b>
+        <div>{{substring description_ru}}</div>
+    </div>
+    <div class="product__list--item__quantity left">x{{number}}</div>
+    <div class="product__list--item__price left"><b>{{cost}}</b> &#8381;</div>
+
+</div>
+{{/each}}

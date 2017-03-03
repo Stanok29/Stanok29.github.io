@@ -1,0 +1,32 @@
+﻿<div class="welcomescreen-container {{#if options.cssClass}}{{options.cssClass}}{{/if}}">
+    {{#if options.closeButton}}
+    <div class="welcomescreen-closebtn close-welcomescreen touch-fix">{{options.closeButtonText}}</div>
+    {{/if}}
+    <div class="welcomescreen-swiper swiper-container">
+        <div class="swiper-wrapper">
+            {{#each slides}}
+            <div class="swiper-slide" {{#if id}}id="{{id}}"{{/if}}>
+                 {{#if content}}
+                 <div class="welcomescreen-content">{{content}}</div>
+                {{else}}
+                {{#if picture}}
+                <div class="welcomescreen-picture">{{picture}}</div>
+                {{/if}}
+                {{#if text}}
+                <div class="welcomescreen-text">{{text}}</div>
+                {{/if}}
+                {{#if image}}
+                <img src="{{image}}">
+                {{/if}}
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+        {{#if options.pagination}}
+        <div class="welcomescreen-pagination swiper-pagination"></div>
+        {{/if}}
+        {{#if options.buttons}}
+        <div class="welcomescreen-buttons"><a href="registration.html" class="btn btn-middle close-welcomescreen touch-fix">{{lang "welcomescreen-0-registratsiya"}}</a><a href="auth.html" class="btn btn-middle close-welcomescreen touch-fix">{{lang "welcomescreen-1-Voyti"}}</a></div>
+        {{/if}}
+    </div>
+</div>

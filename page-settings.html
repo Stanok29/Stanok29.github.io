@@ -1,0 +1,49 @@
+﻿<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back-hint link touch-fix"><i class="icon-back sprite-img"></i>
+                <span>{{lang "page-settings-0-Nastroyki"}}</span></a></div>
+
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="settings" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <form id="settings-form">
+                <div class="content-block">
+                    <h1>{{lang "page-settings-0-Nastroyki"}}</h1>
+                    <div class="list-block form-list"> 
+                        <div class="list-block">
+                            <ul>
+                                <!-- Smart select item -->
+                                <li>
+                                    <!-- Additional "smart-select" class -->
+                                    <a href="#" class="item-link smart-select touch-fix">
+                                        <!-- select -->
+                                        <select name="language" id="settings-languages">
+                                            <option value="ru">{{lang "page-settings-1-Russkiy"}}</option>
+                                            <option value="en">{{lang "page-settings-2-English"}}</option>
+                                            <option value="ee">{{lang "page-settings-3-Eesti"}}</option>
+                                        </select>
+                                        <div class="item-content" id="settings-languages-display">
+                                            <div class="item-inner">
+                                                <div class="item-title">{{lang "page-settings-4-Language"}}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- Another smart selects or list view elements -->
+                            </ul>
+                        </div> 
+                    </div>
+                    <div id="settings-location" class="fix-bottom" style="padding: 10px;"></div>
+                        
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

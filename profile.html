@@ -1,0 +1,108 @@
+﻿<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back-hint link touch-fix" style="font-size:13px"><i class="icon-back sprite-img"></i>
+                <span style="color: #827982;
+                      font: 400 13px/1 Roboto;
+                      text-transform: uppercase;
+                      margin-left: 10px;">{{lang "profile-0-Profil"}}</span>
+            </a></div>
+
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="profile" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <form id="profile-form">
+                <div class="content-block">
+                    <h1>{{lang "profile-0-Profil"}}</h1>
+                    <div class="profile">
+                        <a href="#" class="profile-img" style="visibility:hidden">
+                            <span class="btn" id="profile-image-new"><i class="icon-refresh sprite-img"></i></span>
+                            <img data-pre-src="img/user_def.png" id="profile-avatar-image" height="180" width="280">
+                        </a>
+                        <!--
+                                                <div id="wrapper-outer">
+                                                    <div id="profile-wrapper">      -->
+                        <input type="file" name='file' id='profile-file' accept="image/*"/>
+                        <!--                            </div>
+                                                </div>-->
+                    </div>
+                    <div class="list-block form-list">
+                        <ul>
+                            <li>
+                                <div class="item-content item-input-border">
+                                    <div class="item-media"><i class="icon-user-bold sprite-img"></i></div>
+                                    <div class="item-inner"> 
+                                        <div class="item-input">
+                                            <input type="text" name="profile-form-name" id="profile-form-name" placeholder="{{lang "profile-1-Imya"}}" value=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input-border">
+                                    <div class="item-media"><i class="icon-mail sprite-img"></i></div>
+                                    <div class="item-inner"> 
+                                        <div class="item-input">
+                                            <input type="email" placeholder="{{lang "profile-2-Adres_elektronnoy_po"}}" name="profile-form-email" id="profile-form-email" value=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+           
+                            <li>
+                                <div class="item-content item-input-border">
+                                    <div class="item-media"><i class="icon-birthday-cake sprite-img"></i></div>
+                                    <div class="item-inner"> 
+                                        <div class="item-input">
+<!--                                            <a href="#" class="calendar-select"><i class="icon-cal sprite-img"></i></a>-->
+                                            <input type="date" placeholder="{{lang "profile-4-Data_rozhdeniya"}}" value="" name="profile-form-dateOfBirth" id="profile-form-dateOfBirth"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input-border">
+                                    <div class="item-media"><i class="icon-phone sprite-img"></i></div>
+                                    <div class="item-inner"> 
+                                        <div class="item-input">
+                                            <input type="tel" placeholder="{{lang "profile-5-Telefon"}}" name="profile-form-phoneNumber" id="profile-form-phoneNumber" value=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content item-input-border">
+                                    <div class="item-media"><i class="icon-phone sprite-img"></i></div>
+                                    <div class="item-inner"> 
+                                        <div class="item-input">
+                                            <input type="text" placeholder="{{lang "phone-secret-pin"}}" name="profile-form-secret" id="profile-form-secret" value=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>                            
+                            <li>
+                                <div class="item-content item-input-border">
+                                    <div class="item-media"><i class="icon-user-bold sprite-img"></i></div>
+                                    <div class="item-inner"> 
+                                        <div class="item-input clearfix">
+                                            <div class="input-static left">{{lang "profile-6-Vash_pol"}}</div>
+                                            <div class="right sex-select">
+                                                <a href="#" class="touch-fix" data-gender="male">{{lang "profile-7-muzhskoy"}}</a>
+                                                <a href="#" class="touch-fix" data-gender="female">{{lang "profile-8-zhenskiy"}}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

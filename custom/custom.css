@@ -1,0 +1,167 @@
+.welcome-text div {
+    margin-bottom: 40% !important;
+}
+
+.welcome-text .loya-icon{
+    opacity: 0  !important;
+}
+
+
+.btn {
+    background:#231f20 !important;
+    color:#ffffff !important;
+}
+
+.btn.btn-fb {
+    background:#4862a3 !important;
+    color:#ffffff !important;
+}
+
+.btn.btn-gp {
+    background:#d73d32 !important;
+    color:#ffffff !important;
+}
+
+ .delivery-section__list-option--link a{
+    color:#ffffff !important;
+ }
+
+.navbar-inner .back.link {
+    color:#231f20 !important;
+}
+
+.icon-submenu {
+    color:#231f20 !important;
+}
+
+a {
+    color:#231f20 !important;
+}
+
+a.bg-red{
+    color:#fff  !important;
+}
+a.bg-green{
+    color:#fff  !important;
+}
+.menu-icons a.active {
+    border-bottom:3px solid #231f20 !important;
+    color:#231f20 !important;
+}
+.alert-icon {
+    color: #231f20 !important;
+
+}
+
+.badge {
+    background:#231f20 !important;
+}
+
+.active {
+    color:#231f20 !important;
+}
+
+.filter-sort a.filter-sort-link {
+    color:#231f20 !important;
+}
+
+.filter-sort-view a.selected {
+    color:#231f20 !important;
+}
+
+.object-favorite {
+    border:1px solid #231f20 !important;
+}
+
+.qr-fixed {
+    background:#231f20 !important;
+}
+.object-detail-action .btn.progress span {
+    background:#231f20 !important;
+}
+.modal-button {
+    background:#231f20 !important;
+}
+
+.settings-profile i {
+    color:#231f20 !important;
+}
+
+.message-list a.new .right {
+    color:#231f20 !important;
+}
+
+.label-switch .checkbox:after {
+    background:#231f20 !important;
+}
+
+label.label-checkbox input[type=checkbox]:checked+.item-media i.icon-form-checkbox, label.label-checkbox input[type=radio]:checked+.item-media i.icon-form-checkbox {
+    background:#231f20 !important;
+}
+
+.sex-select a.selected {
+    background:#231f20 !important;
+    color: #fff !important;
+}
+
+.object-detail-action .btn.progress i.icon-coins {
+    color: #000;
+}
+
+.object-detail-location i {
+    color: #231f20 !important;
+}
+
+.object-detail-action-buttons .btn {
+    background-color: #fff !important;
+}
+
+.object-detail-img #company-detail-heart{
+    display :none;
+}
+
+.object-detail-action .btn {
+    background-color: transparent !important;
+    color: #000  !important;
+}
+
+@font-face {
+    font-family: 'icons-custom';
+    src: url('font/icons.eot');
+    src: url('font/icons.eot#iefix') format('embedded-opentype'),
+        url('font/icons.woff') format('woff'),
+        url('font/icons.ttf') format('truetype'),
+        url('font/icons.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-custom-"]:before, [class*=" icon-custom-"]:before {
+    font-family: "icons-custom";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1em;
+}
+.sprite-img-custom {
+    font-family: "icons-custom";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height:1;
+    vertical-align:top;
+    position:relative;
+}
